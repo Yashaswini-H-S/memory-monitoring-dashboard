@@ -1,0 +1,287 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Elegant modern font */
+  }
+  
+  body {
+    background-color: #f4f7fb;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full-width container for content */
+  .algorithms-container {
+    width: 100%;
+    padding: 40px 10%;
+    background: linear-gradient(135deg, #e9f1f7, #fff); /* Soft gradient background */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #1d3557; /* Dark Blue */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+    color: #1d3557;
+    margin: 20px 0;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  /* Enhanced Navigation Bar */
+  .navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #3498db, #2980b9); /* Gradient background for navbar */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .navbar li {
+    font-size: 1.2rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+    transform: scale(1.05);
+  }
+  
+  .navbar a:active {
+    color: #f39c12; /* Slight darker yellow when active */
+  }
+  
+  /* Container for buttons and form elements */
+  label {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  input {
+    padding: 12px;
+    width: 70%;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Soft blue focus */
+    outline: none;
+  }
+  
+  /* Button styles */
+  .buttons button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .buttons button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .buttons button:active {
+    background-color: #1c6d98;
+    transform: scale(0.98);
+  }
+  
+  /* Step Box to Show Animations */
+  .step-box {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animation Step */
+  .step-animation {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Stack Frame Design */
+  .frame-stack {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center;
+    max-height: 400px;
+    min-width: 80px;
+  }
+  
+  .frame {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #3498db;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .frame-stack .frame:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(-5px); /* Slight upward movement on hover */
+  }
+  
+  /* Results section */
+.results {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 500;
+  background-color: #f9f9f9;  /* Light background color */
+  padding: 20px;
+  border-radius: 10px;        /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow effect */
+  transition: all 0.3s ease-in-out;   /* Smooth transition for all styles */
+}
+
+/* Show results with animation */
+.results.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Inner result text styling */
+.results .result-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3498db;  /* Blue header color */
+  margin-bottom: 15px;
+}
+
+.results .result-text {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+  font-weight: 400;
+}
+
+/* Emphasis on specific values */
+.results .result-text span {
+  font-weight: 600;
+  color: #2ecc71;  /* Green color for emphasis */
+}
+
+/* Result footer styling */
+.results .result-footer {
+  font-size: 1.2rem;
+  color: #7f8c8d;  /* Grey color for footer */
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+  
+  /* Buttons Container */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 0 15px;
+    padding: 15px 25px;
+  }
+  
+  /* Animation Effects for Step Box */
+  .step-box {
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .algorithms-container {
+      padding: 20px;
+    }
+  
+    input {
+      width: 90%;
+    }
+  
+    .buttons button {
+      padding: 12px 20px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .frame-stack {
+      max-height: 300px;
+    }
+  
+    .frame {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+  }
+  
